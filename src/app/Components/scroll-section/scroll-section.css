@@ -1,0 +1,51 @@
+
+  .company-scroll-section {
+    padding: 2rem 1rem;
+    background: none;
+    color: #000000;
+  }
+  .scroll-heading {
+    max-width: 720px;
+    margin: 0 auto 1.5rem;
+    text-align: center;
+  }
+  .scroll-heading h2 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+  }
+  .scroll-heading p {
+    margin: 0.75rem auto 0;
+    color: #6b7280;
+    font-size: 1rem;
+  }
+  .company-scroll-wrapper {
+    overflow: hidden;
+  }
+  .company-scroll-track {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    animation: scroll-logos 24s linear infinite;
+    white-space: nowrap;
+  }
+  .company-logo {
+    flex: 0 0 auto;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: none;
+    border-radius: 1rem;
+    /* box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08); */
+  }
+  .company-logo img {
+    max-width: 100%;
+    max-height: 60px;
+    object-fit: contain;
+  }
+  @keyframes scroll-logos {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }

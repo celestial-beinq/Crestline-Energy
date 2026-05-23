@@ -1,0 +1,59 @@
+
+  /* Tabs */
+  .nav-link {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    color: #1A332A;
+    font-weight: 500;
+    border: 1px solid rgba(26, 51, 42, 0.12) !important;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link:hover {
+    background: rgba(26, 51, 42, 0.08);
+  }
+
+  .nav-link.active {
+    background: #1A332A !important;
+    color: #fff !important;
+  }
+
+  /* Accordion */
+  .accordion-item {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    border: 1px solid rgba(26, 51, 42, 0.08);
+    overflow: hidden;
+  }
+
+  .accordion-button {
+    background: transparent !important;
+    color: #1A332A;
+    font-weight: 600;
+
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: #1A332A;
+  }
+
+  .accordion-button::after {
+    box-shadow: none !important;
+  }
+
+  .accordion-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .accordion-body {
+    color: #555;
+  }

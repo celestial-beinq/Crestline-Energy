@@ -1,0 +1,128 @@
+
+  .benefits-section {
+    color: #f4f8f3;
+    padding: 4rem 1.5rem;
+  }
+
+  .benefits-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .benefits-text {
+    padding-right: 1rem;
+  }
+
+  .eyebrow {
+    font-size: 0.9rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #b9e19f;
+    margin-bottom: 1rem;
+  }
+
+  .benefits-text h2 {
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    line-height: 1.05;
+    margin: 0 0 1rem;
+    max-width: 14rem;
+  }
+
+  .benefits-description {
+    color: #d9e5cd;
+    max-width: 22rem;
+    line-height: 1.75;
+  }
+
+  .benefits-visual {
+    display: flex;
+    justify-content: center;
+  }
+
+  .benefits-image-frame {
+    /* border-radius: 1.5rem; */
+    overflow: hidden;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.24);
+    background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(0,0,0,.1));
+  }
+
+  .benefits-image-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-width: 350px;
+  }
+
+  .benefits-list {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .benefit-card {
+    display: flex;
+    gap: 1rem;
+    /* background: rgba(29, 56, 37, 0.9); */
+    /* border: 1px solid rgba(255, 255, 255, 0.08); */
+    border-radius: 1rem;
+    padding: 1rem 1rem 1rem 0.8rem;
+    align-items: flex-start;
+  }
+
+  .icon-circle {
+    min-width: 3rem;
+    min-height: 3rem;
+    display: flex;
+    border: 4px solid #ffffff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #c8f383;
+    color: #1f3d25;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+
+  .benefit-card h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1rem;
+    color: #f8fff5;
+  }
+
+  .benefit-card p {
+    margin: 0;
+    color: #d6e2c7;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 1024px) {
+    .benefits-container {
+      grid-template-columns: 1fr;
+    }
+
+    .benefits-text,
+    .benefits-visual,
+    .benefits-list {
+      width: 100%;
+    }
+
+    .benefits-image-frame img {
+      min-width: auto;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .benefits-section {
+      padding: 2rem 1rem;
+    }
+
+    .benefits-container {
+      gap: 1.5rem;
+    }
+  }
+

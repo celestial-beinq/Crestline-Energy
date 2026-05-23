@@ -1,0 +1,90 @@
+
+    .solar-cta-section {
+        padding: 60px 0;
+    }
+
+    .solar-carousel-item {
+        height: 420px;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .solar-carousel-item::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(84, 84, 84, 0.1);
+    }
+
+    .solar-content {
+        position: absolute;
+        top: 50%;
+        left: 40px;
+        transform: translateY(-50%);
+        color: #fff;
+        max-width: 520px;
+        z-index: 2;
+    }
+
+    .solar-content h2 {
+        font-size: 2rem;
+        font-weight: 900;
+        margin-bottom: 12px;
+        
+    }
+
+    .solar-content p {
+        font-size: 0.95rem;
+        opacity: 0.9;
+        margin-bottom: 20px;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .solar-input-group {
+        display: flex;
+        background: #fff;
+        border-radius: 50px;
+        overflow: hidden;
+        /* max-width: 380px; */
+    }
+
+    .solar-input-group input {
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        flex: 1;
+    }
+
+    .solar-input-group button {
+        border: none;
+        padding: 12px 20px;
+        background: #1a3b2a;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+
+    .carousel-indicators .active {
+        background-color: #05361d;
+    }
+
+    @media(max-width:768px){
+        .solar-content{
+            left: 20px;
+            right: 20px;
+        }
+
+        .solar-content h2{
+            font-size: 1.5rem;
+        }
+    }
